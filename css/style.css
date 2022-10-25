@@ -1,6 +1,17 @@
 body{
+  margin: 0;
+  padding: 0;
    background-color: rgb(19, 127, 127);
+   display: grid;
+   grid-auto-flow: row;
+   overflow: hidden;
 }
+.header {
+  width: 100vw;
+  height: 10px;
+  background-color: rgb(64, 19, 106);
+}
+
 
 .grid-container {
     display: grid;
