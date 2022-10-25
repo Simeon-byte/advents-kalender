@@ -1,3 +1,3 @@
-function door1() {
-    alert("MEMEMEMEMEME");
-};
+const handleDoorClick = (number) => {
+
+}
