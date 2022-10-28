@@ -36,13 +36,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     let dateString = `2022-12-${i + 1}`;
     let enabledDate = new Date(dateString);
 
-    let nowDate = new Date("2022-12-12"); // Date.now()
+    let nowDate =  new Date("2022-12-12"); // Date.now()
     if (nowDate >= enabledDate) {
       // date check for enabled state
       // date passed -> button enabled
     } else {
       door.disabled = true;
-    }
+    }   
   }
 });
 
