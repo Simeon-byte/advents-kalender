@@ -12,9 +12,10 @@ body {
   min-height: 100vh;
 }
 .header {
+  margin: 10px;
   width: 100vw;
-  height: 10px;
-  background-color: rgb(64, 19, 106);
+  height: max-content;
+  
 }
 
 .main {
@@ -65,6 +66,7 @@ body {
 .grid-item[disabled] > p {
   cursor: not-allowed;
   font-weight: lighter;
+  color: darkslategray
 }
 
 .doorLink {
