@@ -1,10 +1,15 @@
-body{
+:root {
+  --itemW: 1px;
+  --itemH: 1px;
+}
+
+body {
   margin: 0;
   padding: 0;
-   background-color: rgb(19, 127, 127);
-   display: grid;
-   grid-auto-flow: row;
-   overflow: hidden;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .header {
   width: 100vw;
@@ -12,40 +17,66 @@ body{
   background-color: rgb(64, 19, 106);
 }
 
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-
-    padding-top: 2%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-
-    row-gap: 10%;
-    column-gap: 1%;
-
-  }
-  
-  .grid-item {
-    background-color: rgba(101, 208, 25, 0.8);
-    border: 3px solid rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-
-    padding: 20px;
-    font-size: 30px;
-    text-align-last: center;
-
-    height: 80px;
-    width: 80px;
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.button1{
-    height: 80px;
-    width: 80px;
-    text-align: top;
-    background-color: transparent;
-    border: 0px solid rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-    color:aqua;    
+.footer {
+  width: 100vw;
+  height: 10px;
+  background-color: red;
+}
+
+.grid-container {
+  min-height: 500px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(6, calc((100% / 6) - 20px));
+  grid-template-rows: repeat(4, calc((100% / 4) - 20px));
+
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid-item {
+  background-color: lightcoral;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+
+  /* padding: 20px; */
+  font-size: 30px;
+  height: 100%;
+
+  width: 100%;
+
+  position: relative;
+}
+
+.grid-item:hover:not(.grid-item[disabled]) {
+  /* background-color: red !important; */
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.grid-item:disabled,
+.grid-item[disabled] > p {
+  cursor: not-allowed;
+  font-weight: lighter;
+}
+
+.doorLink {
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  vertical-align: middle;
+  align-self: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
