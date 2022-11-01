@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(183, 206, 216);
+}
+header {
+    margin: 10px;
+    width: 100vw;
+    height: max-content;
+    color: rgb(0, 58, 126);
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    align-self: center;
+}
+
+.logo_text {
+    display: inline-flex;
+    vertical-align: middle center;
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: lightgray;
+    color: white;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
