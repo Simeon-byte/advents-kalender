@@ -36,11 +36,15 @@ body {
     padding: 10px;
 }
 
-/* .footer {
-  width: 100vw;
-  height: 10px;
-  background-color: red;
-} */
+ .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+} 
 
 .grid-container {
     min-height: 500px;
