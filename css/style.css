@@ -36,11 +36,11 @@ body {
     padding: 10px;
 }
 
-/* .footer {
+ .footer {
   width: 100vw;
-  height: 10px;
-  background-color: red;
-} */
+  height: 10px; 
+  background-color: red; 
+} 
 
 .grid-container {
     min-height: 500px;
@@ -128,3 +128,27 @@ body {
     content: '**locked**';
     text-align: center;
 }
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
