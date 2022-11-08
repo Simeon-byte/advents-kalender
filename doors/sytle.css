@@ -35,8 +35,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: rgb(112, 128, 131);
+    color: black;
     
     display: flex;
     justify-content: space-around;
