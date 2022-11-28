@@ -56,6 +56,6 @@ const handleClick = (event) => {
     if (true) {
         // date check etc.
         window.location.href =
-            './doors/door' + event.target.dataset.num + '.html';
+            './door.html?d=' + event.target.dataset.num;
     }
 };

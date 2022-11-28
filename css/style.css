@@ -40,7 +40,7 @@ body {
     padding: 10px;
 }
 
- .footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -48,7 +48,7 @@ body {
     background-color: red;
     color: white;
     text-align: center;
-} 
+}
 
 .grid-container {
     min-height: 500px;
@@ -150,7 +150,6 @@ body {
     background-size: 50%;
 }
 
-
 .weihnachten::before {
     content: '';
     position: absolute;
@@ -164,8 +163,6 @@ body {
     background-size: 40%;
 }
 
-
-
 .grid-item:disabled::after,
 .grid-item[disabled]::after {
     position: absolute;
@@ -177,4 +174,8 @@ body {
     rotate: 38deg;
     content: '**locked**';
     text-align: center;
+}
+
+main {
+    display: flex;
 }

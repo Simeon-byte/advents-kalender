@@ -1,24 +1,62 @@
-console.log(window.location.href);
+document.addEventListener('DOMContentLoaded', async () => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const doorNr = urlParams.get('d');
+    if (doorNr == '') return (window.location.href = '/');
+    console.log(doorNr);
 
-let regex = /(\d{2})/g;
+    if (!checkDateLock(doorNr)) return;
 
-let tuerArray = window.location.href.match(regex);
+    setTitleNr(doorNr);
 
-let tuerNr = parseInt(tuerArray[tuerArray.length - 1]);
+    setVideoEmbed(doorConfig, doorNr);
+});
 
-let titleNodes = document.getElementsByClassName("title");
+const checkDateLock = (doorNr) => {
+    //const doorUnlockDate = new Date(2022, 11, doorNr); // Dezember: 12 aber -1 -> 11
 
-for (let i = 0; i < titleNodes.length; i++) {
-  console.log(titleNodes[i]);
-  titleNodes[i].innerText = "Türchen Nr."+tuerNr;
-}
+    const doorUnlockDate = new Date(1999, 11, 11);
 
-// titleNodes.forEach((node) => {
-//   node.innerText = tuerNr;
-// });
+    if (Date.now() < doorUnlockDate) {
+        console.log('access denied');
+        window.location.href = '/';
+        return false;
+    }
+    return true;
+};
 
-console.log(titleNode);
-titleNode.style.backgroundColor = "green";
-titleNode.nodeValue = tuerNr;
-titleNode.nodeValue;
-console.log(tuerNr);
+const setTitleNr = (doorNr) => {
+    let titleNodes = document.getElementsByClassName('title');
+
+    for (let i = 0; i < titleNodes.length; i++) {
+        titleNodes[i].innerText = 'Türchen Nr.' + doorNr;
+    }
+};
+
+const setVideoEmbed = (doorConfig, doorNr) => {
+    const doorData = doorConfig[doorNr - 1];
+
+
+    console.table(doorData);
+
+    let videoURL = doorData.contentURL;
+    let videoTitle = doorData.title;
+    let videoDescribtion = doorData.describtion;
+
+    
+    let embedElement = document.getElementById('videoEmbed');
+    embedElement.setAttribute('src', videoURL);
+    
+    let titelElement = document.getElementById('videoTitle');
+    if (!videoURL || !videoTitle || !videoDescribtion) {
+      titelElement.textContent = "Content not implemented!";
+    } else {
+      titelElement.textContent = videoTitle;
+
+    }
+    
+    let describtionElement = document.getElementById('videoDescribtion');
+    describtionElement.textContent = videoDescribtion;
+
+
+};
