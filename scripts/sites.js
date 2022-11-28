@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     setTitleNr(doorNr);
 
-    setVideoEmbed(doorConfig, doorNr);
+    setVideoEmbed(data, doorNr);
 });
 
 const checkDateLock = (doorNr) => {
