@@ -39,16 +39,16 @@ const setVideoEmbed = (doorConfig, doorNr) => {
 
     console.table(doorData);
 
-    let videoURL = doorData.contentURL;
+    let videoID = doorData.contentID;
     let videoTitle = doorData.title;
     let videoDescribtion = doorData.describtion;
 
     
     let embedElement = document.getElementById('videoEmbed');
-    embedElement.setAttribute('src', videoURL);
+    embedElement.setAttribute('src', "https://www.youtube.com/embed/"+videoID);
     
     let titelElement = document.getElementById('videoTitle');
-    if (!videoURL || !videoTitle || !videoDescribtion) {
+    if (!videoID || !videoTitle || !videoDescribtion) {
       titelElement.textContent = "Content not implemented!";
     } else {
       titelElement.textContent = videoTitle;
