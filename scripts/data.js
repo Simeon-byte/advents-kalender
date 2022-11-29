@@ -11,7 +11,7 @@ const data = {
         classNames: '',
         contentID: 'LDU_Txk06tM',
         title: 'Crab Rave test',
-        describtion: 'test',
+        describtion: 'lorem ipsum s s s s s s s s s s s s s s s s s s s s s s s s s s ',
     },
     2: {
         color: 'rgb(60,109,201)',
