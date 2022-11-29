@@ -1,7 +1,10 @@
 const data = {
     0: {
         color: 'rgb(47,118,147)',
-        classNames: 'lichterkette'
+        classNames: 'lichterkette',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     1: {
         color: 'rgb(112,128,131)',
@@ -47,15 +50,24 @@ const data = {
     },
     10: {
         color: 'rgb(60,109,201)',
-        classNames: 'adventskranz3'
+        classNames: 'adventskranz3',
+        contentID: 'cUVdityDkJM',
+        title: 'Kevin - Allein in New York',
+        describtion: 'Kevin wird vo sina Familie in New York vergeassa des Opfa',
     },
     11: {
         color: 'rgb(227,233,238)',
-        classNames: ''
+        classNames: '',
+        contentID: 'ajXAwMB8eR0',
+        title: 'Alice in Borderland',
+        describtion: 'Alice in Borderland',
     },
     12: {
         color: 'rgb(9, 94, 173)',
-        classNames: ''
+        classNames: '',
+        contentID: 'D-SPRCQAb9E',
+        title: 'Bojack Horesmam',
+        describtion: 'irgendan komischa Pferdemann',
     },
     13: {
         color: 'rgb(3, 82, 255)',
