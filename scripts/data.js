@@ -71,47 +71,80 @@ const data = {
     },
     13: {
         color: 'rgb(3, 82, 255)',
-        classNames: ''
+        classNames: '',
+        contentID: '-JtwROpSVWc',
+        title: 'The Knight before Christmas',
+        describtion: 'The Knight before Christmas',
     },
     14: {
         color: 'rgb(95, 90, 199)',
-        classNames: ''
+        classNames: '',
+        contentID: 'JPFl5HLljl8',
+        title: 'Prinzessinnentausch',
+        describtion: 'Prinzessinnentausch',
     },
     15: {
         color: 'rgb(98, 124, 188)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     16: {
         color: 'rgb(47,118,147)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     17: {
         color: 'rgb(112,128,131)',
-        classNames: 'adventskranz4'
+        classNames: 'adventskranz4',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     18: {
         color: 'rgb(60,109,201)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     19: {
         color: 'rgb(227,233,238)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     20: {
         color: 'rgb(9, 94, 173)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     21: {
         color: 'rgb(3, 82, 255)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     22: {
         color: 'rgb(95, 90, 199)',
-        classNames: ''
+        classNames: '',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
     23: {
         color: 'rgb(98, 124, 188)',
-        classNames: 'weihnachten'
+        classNames: 'weihnachten',
+        contentID: '',
+        title: '',
+        describtion: '',
     },
 
     //weihnachten und nikolaus sind nur temporär und kann ma spöter no ändern!!!!!!!
