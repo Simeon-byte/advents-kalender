@@ -11,7 +11,7 @@ const data = {
         classNames: '',
         contentID: 'LDU_Txk06tM',
         title: 'Crab Rave test',
-        describtion: 'lorem ipsum s s s s s s s s s s s s s s s s s s s s s s s s s s ',
+        describtion: 'lorem ipsum',
     },
     2: {
         color: 'rgb(60,109,201)',
@@ -123,7 +123,7 @@ const data = {
         color: 'rgb(112,128,131)',
         classNames: 'adventskranz4',
         contentID: 'lQ9yqtu2L9I',
-        title: 'Prinzessinnentausch - Wieder vertauscht',
+        title: 'Prinzessinnentausch ',
         describtion: 'Prinzessinnentausch - Wieder vertauscht',
     },
     18: {
@@ -137,14 +137,14 @@ const data = {
         color: 'rgb(227,233,238)',
         classNames: '',
         contentID: 'vtqlKNyjBAU',
-        title: ' Elliot - Das kleine Rentier',
+        title: ' Elliot',
         describtion: ' Elliot - Das kleine Rentier',
     },
     20: {
         color: 'rgb(9, 94, 173)',
         classNames: '',
         contentID: 'CfXzd8fgy6Q',
-        title: 'Prinzessinnentausch 3: Auf der Jagd nach dem Stern',
+        title: 'Prinzessinnentausch 3',
         describtion: 'Prinzessinnentausch 3: Auf der Jagd nach dem Stern',
     },
     21: {
