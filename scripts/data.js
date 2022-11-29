@@ -16,38 +16,60 @@ const data = {
     2: {
         color: 'rgb(60,109,201)',
         classNames: '',
-        contentID: '',
-        title: '',
-        describtion: '',
+        contentID: 'Zryz0fQoI3I',
+        title: 'Peter Pan',
+        describtion: 'Peter Pan',
     },
     3: {
         color: 'rgb(227,233,238)',
-        classNames: 'adventskranz2'
+        classNames: 'adventskranz2',
+        contentID: 'zv_u2bpAxGE',
+        title: 'Sally Bollywood',
+        describtion: 'Sally Bollywood',
     },
     4: {
         color: 'rgb(9, 94, 173)',
-        classNames: ''
+        classNames: '',
+        contentID: 'pIlFsxGzN_0',
+        title: 'Shameless',
+        describtion: 'Shameless',
     },
     5: {
         color: 'rgb(3, 82, 255)',
-        classNames: 'nikolaus'
+        classNames: 'nikolaus',
+        contentID: 'Yduo1lN7fAI',
+        title: 'Elite',
+        describtion: 'Elite',
     },
     6: {
         color: 'rgb(95, 90, 199)',
-        classNames: ''
+        classNames: 'ngW2mOhysfc',
+        contentID: 'ngW2mOhysfc',
+        title: 'Peaky Blinders',
+        describtion: 'Peaky Blinders',
     },
     7: {
         color: 'rgb(98, 124, 188)',
-        classNames: ''
+        classNames: '',
+        contentID: '0z_WwoRHHUc',
+        title: 'Barbie the Island Princess',
+        describtion: 'Barbie the Island Princess',
     },
     8: {
         color: 'rgb(47,118,147)',
-        classNames: ''
+        classNames: '',
+        contentID: 'rYJ6bg0NCII',
+        title: 'Spider Man Miles Morales',
+        describtion: 'Spider Man Miles Morales',
     },
     9: {
         color: 'rgb(112,128,131)',
-        classNames: ''
+        classNames: '',
+        contentID: '6zbdyyV1lok',
+        title: 'Cars 3',
+        describtion: 'Cars 3',
     },
+    //Peschl
     10: {
         color: 'rgb(60,109,201)',
         classNames: 'adventskranz3',
@@ -116,34 +138,3 @@ const data = {
 
     //weihnachten und nikolaus sind nur temporär und kann ma spöter no ändern!!!!!!!
 };
-
-// const doorConfig = {
-//     0: { contentID: '' },
-//     1: {
-//         contentID: 'LDU_Txk06tM',
-//         title: 'Crab Rave test',
-//         describtion: 'test',
-//     },
-//     2: { contentID: '' },
-//     3: { contentID: '' },
-//     4: { contentID: '' },
-//     5: { contentID: '' },
-//     6: { contentID: '' },
-//     7: { contentID: '' },
-//     8: { contentID: '' },
-//     9: { contentID: '' },
-//     10: { contentID: '' },
-//     11: { contentID: '' },
-//     12: { contentID: '' },
-//     13: { contentID: '' },
-//     14: { contentID: '' },
-//     15: { contentID: '' },
-//     16: { contentID: '' },
-//     17: { contentID: '' },
-//     18: { contentID: '' },
-//     19: { contentID: '' },
-//     20: { contentID: '' },
-//     21: { contentID: '' },
-//     22: { contentID: '' },
-//     23: { contentID: '' },
-// };
