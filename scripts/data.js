@@ -123,7 +123,7 @@ const data = {
         color: 'rgb(112,128,131)',
         classNames: 'adventskranz4',
         contentID: 'lQ9yqtu2L9I',
-        title: 'Prinzessinnentausch - Wieder vertauscht',
+        title: 'Prinzessinnentausch 2',
         describtion: 'Prinzessinnentausch - Wieder vertauscht',
     },
     18: {
@@ -144,7 +144,7 @@ const data = {
         color: 'rgb(9, 94, 173)',
         classNames: '',
         contentID: 'CfXzd8fgy6Q',
-        title: 'Prinzessinnentausch 3: Auf der Jagd nach dem Stern',
+        title: 'Prinzessinnentausch 3',
         describtion: 'Prinzessinnentausch 3: Auf der Jagd nach dem Stern',
     },
     21: {
