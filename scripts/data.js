@@ -1,17 +1,17 @@
 const data = {
     0: {
         color: 'rgb(47,118,147)',
-        classNames: 'lichterkette',
-        contentID: '',
-        title: '',
-        describtion: '',
+        classNames: '',
+        contentID: 'DZcQ6HMWVng',
+        title: 'Weihnachtsmann und Co. KG',
+        describtion: 'Weihnachtsmann und Co. KG',
     },
     1: {
         color: 'rgb(112,128,131)',
         classNames: '',
         contentID: 'LDU_Txk06tM',
-        title: 'Crab Rave test',
-        describtion: 'lorem ipsum s s s s s s s s s s s s s s s s s s s s s s s s s s ',
+        title: 'Crab Rave Crab Rave',
+        describtion: 'Crab Rave',
     },
     2: {
         color: 'rgb(60,109,201)',
