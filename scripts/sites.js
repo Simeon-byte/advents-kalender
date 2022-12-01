@@ -26,8 +26,8 @@ const checkDateLock = (doorNr) => {
   }
   if (nowDate < doorUnlockDate) {
     console.log("access denied");
-    // window.location.href = '/';
-    // return false;
+    window.location.href = '/';
+    return false;
   }
   return true;
 };
