@@ -75,7 +75,7 @@ const data = {
         classNames: 'adventskranz3',
         contentID: 'cUVdityDkJM',
         title: 'Kevin - Allein in New York',
-        describtion: 'Kevin wird vo sina Familie in New York vergeassa des Opfa',
+        describtion: 'Kevin wird von seiner Familie an Weihnachten in New York vergessen',
     },
     11: {
         color: 'rgb(227,233,238)',
@@ -88,8 +88,8 @@ const data = {
         color: 'rgb(9, 94, 173)',
         classNames: '',
         contentID: 'D-SPRCQAb9E',
-        title: 'Bojack Horesmam',
-        describtion: 'irgendan komischa Pferdemann',
+        title: 'Bojack Horseman',
+        describtion: 'Bojack Horseman',
     },
     13: {
         color: 'rgb(3, 82, 255)',
@@ -164,7 +164,7 @@ const data = {
     23: {
         color: 'rgb(98, 124, 188)',
         classNames: 'weihnachten',
-        contentID: 'dQw4w9WgXcQ',
+        contentID: 'oCeufSH75WQ',
         title: 'Never gonna give you up',
         describtion: 'Never gonna let you down.',
     },
