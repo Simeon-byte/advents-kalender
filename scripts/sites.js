@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 const checkDateLock = (doorNr) => {
   //const doorUnlockDate = new Date(2022, 11, doorNr); // Dezember: 12 aber -1 -> 11
 
-  const doorUnlockDate = new Date(2022, 12, doorNr);
+  const doorUnlockDate = new Date(2022, 11, doorNr);
 
   let nowDate;
   if (DEBUG) {
@@ -24,7 +24,7 @@ const checkDateLock = (doorNr) => {
   } else {
     nowDate = Date.now();
   }
-  if (nowDate < doorUnlockDate) {
+  if (doorUnlockDate > nowDate ) {
     console.log("access denied");
     window.location.href = '/';
     return false;
