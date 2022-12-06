@@ -17,6 +17,7 @@ const checkDateLock = (doorNr) => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     const doorUnlockDate = new Date(1999, 11, 11);
 
     if (Date.now() < doorUnlockDate) {
@@ -26,6 +27,8 @@ const checkDateLock = (doorNr) => {
     }
     return true;
 =======
+=======
+>>>>>>> parent of 958ad24 (fixed door lock)
 =======
 >>>>>>> parent of 958ad24 (fixed door lock)
   const doorUnlockDate = new Date(2022, 12, doorNr);
