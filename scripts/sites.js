@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 const checkDateLock = (doorNr) => {
     //const doorUnlockDate = new Date(2022, 11, doorNr); // Dezember: 12 aber -1 -> 11
 
+<<<<<<< HEAD
     const doorUnlockDate = new Date(1999, 11, 11);
 
     if (Date.now() < doorUnlockDate) {
@@ -23,6 +24,23 @@ const checkDateLock = (doorNr) => {
         return false;
     }
     return true;
+=======
+  const doorUnlockDate = new Date(2022, 12, doorNr);
+
+  let nowDate;
+  if (DEBUG) {
+    nowDate = new Date(2024, 11, 11);
+    console.log("DEBUG is enabled");
+  } else {
+    nowDate = Date.now();
+  }
+  if (nowDate < doorUnlockDate) {
+    console.log("access denied");
+    window.location.href = '/';
+    return false;
+  }
+  return true;
+>>>>>>> parent of 958ad24 (fixed door lock)
 };
 
 const setTitleNr = (doorNr) => {
