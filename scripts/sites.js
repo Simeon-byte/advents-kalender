@@ -15,38 +15,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 const checkDateLock = (doorNr) => {
     //const doorUnlockDate = new Date(2022, 11, doorNr); // Dezember: 12 aber -1 -> 11
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    const doorUnlockDate = new Date(1999, 11, 11);
+    const doorUnlockDate = new Date(2022, 11, doorNr);
 
-    if (Date.now() < doorUnlockDate) {
+    let nowDate;
+    if (DEBUG) {
+        nowDate = new Date(2024, 11, 11);
+        console.log('DEBUG is enabled');
+    } else {
+        nowDate = Date.now();
+    }
+    if (nowDate < doorUnlockDate) {
         console.log('access denied');
         window.location.href = '/';
         return false;
     }
     return true;
-=======
-=======
->>>>>>> parent of 958ad24 (fixed door lock)
-=======
->>>>>>> parent of 958ad24 (fixed door lock)
-  const doorUnlockDate = new Date(2022, 12, doorNr);
-
-  let nowDate;
-  if (DEBUG) {
-    nowDate = new Date(2024, 11, 11);
-    console.log("DEBUG is enabled");
-  } else {
-    nowDate = Date.now();
-  }
-  if (nowDate < doorUnlockDate) {
-    console.log("access denied");
-    window.location.href = '/';
-    return false;
-  }
-  return true;
->>>>>>> parent of 958ad24 (fixed door lock)
 };
 
 const setTitleNr = (doorNr) => {
@@ -60,27 +43,25 @@ const setTitleNr = (doorNr) => {
 const setVideoEmbed = (doorConfig, doorNr) => {
     const doorData = doorConfig[doorNr - 1];
 
-
     console.table(doorData);
 
     let videoID = doorData.contentID;
     let videoTitle = doorData.title;
     let videoDescribtion = doorData.describtion;
 
-    
     let embedElement = document.getElementById('videoEmbed');
-    embedElement.setAttribute('src', "https://www.youtube.com/embed/"+videoID);
-    
+    embedElement.setAttribute(
+        'src',
+        'https://www.youtube.com/embed/' + videoID
+    );
+
     let titelElement = document.getElementById('videoTitle');
     if (!videoID || !videoTitle || !videoDescribtion) {
-      titelElement.textContent = "Content not implemented!";
+        titelElement.textContent = 'Content not implemented!';
     } else {
-      titelElement.textContent = videoTitle;
-
+        titelElement.textContent = videoTitle;
     }
-    
+
     let describtionElement = document.getElementById('videoDescribtion');
     describtionElement.textContent = videoDescribtion;
-
-
 };

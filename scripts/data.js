@@ -171,3 +171,5 @@ const data = {
 
     //weihnachten und nikolaus sind nur temporär und kann ma spöter no ändern!!!!!!!
 };
+
+DEBUG = false;
